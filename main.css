@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.js-movie-item {
+  min-height: 400px;
+  /* max-height: 450px; */
+}
+
+.movie-list__item{  
+  display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  width: 300px;
+  padding: 20px;
+  border: 3px solid #ffff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px #ffff;
+  margin-top: 40px;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: #2e2d2d;
+  color: #fff;
+}
+
+.form-control {
+  margin-right: 10px;
+}
+
+.movie-list__item:hover {
+  box-shadow: #ffff 0px 2px 20px 4px;
+  transition: 0.3s;
+ 
+}
+.site-title {
+  text-align: center;
+ 
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.movie-list__categories {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.movie-list__heading {
+  margin-bottom: 10px;
+}
+
+.modal {
+  color: #fff;
+}
+
+.movie-modal__imdb-link {
+  color: #fff;
+}
+.modal-content {
+  background-color: #0d6efd;
+}
+
+select {
+  border-radius: 5px
+}
+
+.rating-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/star.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.year-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/calendar-clock.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+.runtime-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/time-fast.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.movie-modal__imdb-link::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-image: url("./images/link.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
